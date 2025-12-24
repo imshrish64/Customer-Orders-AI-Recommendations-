@@ -35,16 +35,28 @@ Pytest
 ----------------------------------------------------------------------------------------------------------
 customer_orders/
 ├── app/
+
 │   ├── api/              # FastAPI routes
+
 │   ├── core/             # DB & config
+
 │   ├── models/           # SQLAlchemy models
+
 │   ├── repositories/     # Data access layer
+
 │   ├── services/         # Business logic
+
 │   ├── ai/               # LLM prompts & chains (LangChain)
+
 │   └── main.py           # Application entry point
+
 │
+
 ├── tests/                # Pytest test cases
+
+
 ├── requirements.txt
+
 └── README.md
 
 ⚙️ Run Locally
@@ -134,6 +146,7 @@ Thoughtful trade-offs for a POC
 ----------------------------------------------------------------------------------------------------------
 
 Shrish Dubey
+
 AI Engineer
 
 
