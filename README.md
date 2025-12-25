@@ -31,6 +31,8 @@ OpenAI (pluggable, mocked in tests)
 
 Pytest
 
+Docker
+
 📂 Project Structure
 ----------------------------------------------------------------------------------------------------------
 customer_orders/
@@ -54,6 +56,9 @@ customer_orders/
 
 ├── tests/                # Pytest test cases
 
+├── Dockerfile
+
+├── .dockerignore
 
 ├── requirements.txt
 
@@ -121,9 +126,32 @@ Prompt enforces strict JSON output
 
 LangChain handles prompt + model + parsing
 
-LLM provider is pluggable (OpenAI / Grok / Mock)
+LLM provider is pluggable (OpenAI / Mock)
 
 The recommendation endpoint is implemented as async.
+
+
+🐳 Run with Docker
+----------------------------------------------------------------------------------------------------------
+
+This project can also be run fully containerized using Docker.
+
+### Build the Docker image
+--------------------------------------------------------------------------------------------------------
+
+docker build -t customer-orders .
+
+###Run the container
+---------------------------------------------------------------------------------------------------------
+
+docker run -p 8000:8000 customer-orders
+
+Access the API
+--------------------------------------------------------------------------------------------------------
+
+Swagger UI: http://localhost:8000/docs
+
+
 
 🧠 Summary
 ----------------------------------------------------------------------------------------------------------
