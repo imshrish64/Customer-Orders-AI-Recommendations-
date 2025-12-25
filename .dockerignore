@@ -1,0 +1,23 @@
+# VCS
+.git
+.gitignore
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+custenv/
+
+# Env files
+.env
+
+# Test artifacts
+.pytest_cache/
+.coverage
+
+# OS files
+.DS_Store
