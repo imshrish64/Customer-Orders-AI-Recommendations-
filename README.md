@@ -74,7 +74,7 @@ pip install --no-cache-dir -r requirements.txt
 
 3️⃣ (Optional) Configure LLM API Key
 -----------------------------------------------------------------------------------------------------------
-If using OpenAI or Grok:
+If using OpenAI:
 
 export OPENAI_API_KEY="your_api_key_here"
 
