@@ -53,6 +53,7 @@ customer_orders/
 │   └── main.py           # Application entry point
 
 ├── scripts/
+
     └── seed.py          # Script to seed DB with sample data
 │
 
