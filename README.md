@@ -224,3 +224,11 @@ Shrish Dubey
 AI Engineer
 
 
+Note
+-------------------------------------------------------------------------------------------------
+I have used GPT for vibe coding and do the assignment within the respective time.
+If you want me to explain the production-grade implementation I can do I have done in our previous projects, like 
+how to integrate ServiceNow and zendesk api here and get the data from them and offer the service to customers.
+For any clarification, please reach out to me.
+
+
