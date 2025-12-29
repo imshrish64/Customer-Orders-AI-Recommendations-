@@ -52,6 +52,8 @@ customer_orders/
 
 │   └── main.py           # Application entry point
 
+├── scripts/
+    └── seed.py          # Script to seed DB with sample data
 │
 
 ├── tests/                # Pytest test cases
@@ -85,12 +87,54 @@ export OPENAI_API_KEY="your_api_key_here"
 
 The project also supports mocked LLM logic for testing and local development.
 
-4️⃣ Run the application
+4️⃣ Start the FastAPI application (IMPORTANT)
 -----------------------------------------------------------------------------------------------------------
+
+You must start the FastAPI app at least once so that:
+
+The SQLite database is created
+
+Tables are initialized via SQLAlchemy
+
+'''bash 
+
 uvicorn app.main:app --reload
 
-5️⃣ Open API documentation
+Wait until you see:
+
+Application startup complete.
+
+You can now stop the server (CTRL+C).
+
+🌱 Seed the Database with Sample Data.
+---------------------------------------------------------------------------------------------------------
+
+After the app has been started once, run the seed script to populate the database with sample customers, products, and orders.
+
+From the project root:
+
+'''bash 
+
+PYTHONPATH=. python scripts/seed.py
+
+This will:
+
+Insert sample customers
+
+Insert sample products
+
+Insert sample orders (purchase history)
+
+✅ This step is required to test recommendations with real data.
+
+5️⃣ Restart the application
+---------------------------------------------------------------------------------------------------------
+
+uvicorn app.main:app --reload
+
+6️⃣ Open API documentation
 -----------------------------------------------------------------------------------------------------------
+
 http://127.0.0.1:8000/docs
 
 🧪 Run Tests
